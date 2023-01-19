@@ -3,7 +3,7 @@ on:
   push:  # merges on main
   
 jobs:
-  update-lib:
+  release-libs:
     name: Auto-release any bumped libraries
     uses: PietroPasotti/charming-actions/release-libraries@release-libs
     secrets: inherit
