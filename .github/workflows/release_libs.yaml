@@ -5,6 +5,14 @@ on:
 jobs:
   release-libs:
     name: Auto-release any bumped libraries
-    uses: PietroPasotti/charming-actions/release-libraries@release-libs
-    secrets: inherit
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  
+      - name: Check libraries
+        uses: PietroPasotti/charming-actions/release-libraries@release-libs
+        with:
+          credentials: "${{ secrets.CHARMHUB_TOKEN }}"
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
 
