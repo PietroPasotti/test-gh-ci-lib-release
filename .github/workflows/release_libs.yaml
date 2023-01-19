@@ -12,8 +12,8 @@ jobs:
         with:
           fetch-depth: 0 
           
-      - name: Setup upterm session
-        uses: lhotari/action-upterm@v1
+#      - name: Setup upterm session
+#        uses: lhotari/action-upterm@v1
 
       - name: Check libraries
         uses: PietroPasotti/charming-actions/release-libraries@release-libs
