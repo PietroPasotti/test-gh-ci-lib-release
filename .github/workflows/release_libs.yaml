@@ -1,0 +1,10 @@
+name: Auto-update Charm Libraries on merge
+on:
+  push:  # merges on main
+  
+jobs:
+  update-lib:
+    name: Auto-release any bumped libraries
+    uses: PietroPasotti/charming-actions@release-libs/release-libraries
+    secrets: inherit
+
