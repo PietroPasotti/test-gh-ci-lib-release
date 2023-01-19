@@ -5,6 +5,6 @@ on:
 jobs:
   update-lib:
     name: Auto-release any bumped libraries
-    uses: PietroPasotti/charming-actions@release-libs/release-libraries
+    uses: PietroPasotti/charming-actions/release-libraries@release-libs
     secrets: inherit
 
